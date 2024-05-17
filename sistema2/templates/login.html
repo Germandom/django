@@ -1,0 +1,24 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}"/>
+        <link rel="stylesheet" href="{%static 'css/style.css'%}"/>
+    </head>
+    <body>
+        <h1 class="text-center">login</h1>
+        <div class="row g-3"> 
+            <div class="col-auto">
+                <label for="Usuario" class="visually-hidden">Usuario</label>
+                <input type="text" class="form-control" id="Usuario" placeholder="Usuario">
+            </div>
+            <div class="col-auto">
+                <label for="Password" class="visually-hidden">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Confirmar</button>
+            </div>
+        </div>
+    </body>
+</html>
